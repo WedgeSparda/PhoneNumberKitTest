@@ -11,6 +11,7 @@
 		96D51CB82A399E1600E8DD0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D51CB72A399E1600E8DD0D /* ContentView.swift */; };
 		96D51CBA2A399E1800E8DD0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D51CB92A399E1800E8DD0D /* Assets.xcassets */; };
 		96D51CBD2A399E1800E8DD0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D51CBC2A399E1800E8DD0D /* Preview Assets.xcassets */; };
+		96D51CC52A399E7C00E8DD0D /* PhoneNumberKit in Frameworks */ = {isa = PBXBuildFile; productRef = 96D51CC42A399E7C00E8DD0D /* PhoneNumberKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D51CC52A399E7C00E8DD0D /* PhoneNumberKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = PhoneNumberKitTest;
+			packageProductDependencies = (
+				96D51CC42A399E7C00E8DD0D /* PhoneNumberKit */,
+			);
 			productName = PhoneNumberKitTest;
 			productReference = 96D51CB22A399E1600E8DD0D /* PhoneNumberKitTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 96D51CA92A399E1600E8DD0D;
+			packageReferences = (
+				96D51CC32A399E7C00E8DD0D /* XCRemoteSwiftPackageReference "PhoneNumberKit" */,
+			);
 			productRefGroup = 96D51CB32A399E1600E8DD0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96D51CC32A399E7C00E8DD0D /* XCRemoteSwiftPackageReference "PhoneNumberKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/PhoneNumberKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96D51CC42A399E7C00E8DD0D /* PhoneNumberKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96D51CC32A399E7C00E8DD0D /* XCRemoteSwiftPackageReference "PhoneNumberKit" */;
+			productName = PhoneNumberKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96D51CAA2A399E1600E8DD0D /* Project object */;
 }
